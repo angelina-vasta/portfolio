@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/78d1c2d8c2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+    <section class="hero">
+        <nav>
+            <ul id = "nav-list">
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <div class= "hero-area">
+            <div class="hero-text">
+                <h1>Angelina Vasta</h1>
+                <p>Full Stack Developer</p>
+                <div class="button"><a href="#about-me">About Me</a></div>
+            </div>
+            <div class="socials">
+              <div class="linkedIn"><a href="https://www.linkedin.com/in/angelinavasta" class="social">
+                <img src="src/images/linkedin.png" width=50px height=50px alt="LinkedIn Link" />
+              </a></div>
+              <div class="gitHub"><a href="https://github.com/angelina-vasta/projects" class= "social">
+                <img src="src/images/github.png" width=50px height=50px alt="GitHub Link" />
+              </a></div>
+          </div>
+        </div>
+    </section>
+
+    <section class="sub-section" id="about-me">
+      <div class="information">
+        <h2>About Me</h2>
+        <hr class="about-me-line"/>
+        <p>Hello, my name is Angelina Vasta. I am a full stack software engineer with an expected graduation of May 2024 from Macaulay Honors Colege. I have professional and personal experience in a variety of languages such as Java, Python, HTML, JavaScript and CSS.</p>
+      </div>
+      <div class="headshot-container">
+        <img class="headshot" src="src/images/headshot.jpeg" alt="Angelina Vasta headshot"/>
+      </div>
+      <!--<div class="resume-button">
+          <a href="path/to/your_resume.pdf" target="_blank" download>
+          <button>Download Resume</button>
+      </div>-->
+    </section>
+    <section class="sub-section-alternative" id="projects">
+    <!--Change links to projects and the image it is connected to as projects are completed-->
+      <h2>Projects</h2>
+        <div class="project-container">
+          <div class="project-card">
+            <img class = "project-image" src = "src\images\project1.png" alt = "Project One Image"/>
+            <h3>Trivia App</h3>
+            <p class="subtext">Try out a 10 question quiz!</p>
+            <hr class="project-line"/>
+            <p class="subtext"><a class="project-link" href="https://angelina-vasta.github.io/trivia">View Here</a></p>
+          </div>
+          <div class="project-card">
+            <img class = "project-image" src = "src\images\project1.png" alt = "Project One Image"/>
+            <h3>Project Two</h3>
+            <p class="subtext">Text About Project Two</p>
+            <hr class="project-line"/>
+            <p class="subtext"><a class="project-link" href="https://github.com/angelina-vasta/projects">View Here</a></p>
+          </div>
+          <div class="project-card">
+            <img class = "project-image" src = "src\images\project1.png" alt = "Project One Image"/>
+            <h3>Project Three</h3>
+            <p class="subtext">Text About Project Three</p>
+            <hr class="project-line"/>
+            <p class="subtext"><a class="project-link" href="https://github.com/angelina-vasta/projects">View Here</a></p>
+          </div>
+          <div class="project-card">
+            <img class = "project-image" src = "src\images\project1.png" alt = "Project One Image"/>
+            <h3>Project Four</h3>
+            <p class="subtext">Text About Project Four</p>
+            <hr class="project-line"/>
+            <p class="subtext"><a class="project-link" href="https://github.com/angelina-vasta/projects">View Here</a></p>
+          </div>
+        </div>
+    </section>
+    <!--Turn into contact form that can be filled out directy on page-->
+    <footer id="contact">
+        <div class="contact-form">
+          <form action="https://formsubmit.co/angelinavasta@gmail.com" method="POST">
+            <h3>Get In Touch</h3>
+            <input type = "text" name="text" id="name" placeholder="Your Name" required>
+            <input type = "email" name="id" id="email" placeholder="Email Address" required>
+            <input type = "phone" name="phone" id="phone" placeholder="Phone Number" required>
+            <textarea id="message"  rows="4" placeholder="Message"></textarea>
+            <button class="submitButton" type="submit">Send Message</button>
+          </form>
+        </div>
+        
+    </footer>
+    <script src="src/app.js"></script>
+  </body>
+</html>

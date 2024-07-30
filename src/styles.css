@@ -1,0 +1,352 @@
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+section{
+    background-color: rgb(0, 3, 44);
+    color:white;
+    border: solid transparent 1px;
+    position: relative;
+    z-index:2;
+}
+
+.hero{
+    background-color: black;
+    background-image: url("images//computer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+    position: sticky;
+    top:0;
+    z-index:1;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+    position: relative;
+    z-index:2;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 600px;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+li{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 70px;
+    margin: 0px;
+}
+
+h2{
+    text-align: center;
+    font-size:40px;
+    font-weight: 600;
+}
+
+p{
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.hero-area{
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{
+    
+    margin-left:80px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button{
+    animation: pulse 2s ease-in-out infinite;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: coral;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    padding-top: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ef744b;
+}
+
+.button:active{
+    background-color: #A9A9A9;
+    color: #808080;
+}
+
+.socials{
+    margin-bottom: 200px;
+    /*position: fixed;
+    bottom: 30px; /* Adjust the distance from the bottom as needed
+    right: 30px;*/
+}
+
+.social{
+    margin: 20px;
+}
+
+.linkedIn:hover{
+    transform: translateX(5px) scale(1.1);
+}
+
+.gitHub:hover{
+    transform: translateX(5px) scale(1.1);
+}
+
+.sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%
+}
+
+.sub-section-alternative{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot{
+    width: 200px;
+    border-radius:0px;
+}
+
+.headshot-container{
+    display: flex;
+    align-items: center;
+}
+
+.project-card{
+    width: 250px;
+    height: 500px;
+    box-shadow: 5px 5px 20px;
+    margin: 10px;
+}
+
+.project-container{
+    display:flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display:flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    height:325px;
+    border-radius: 125px;
+}
+
+.project-line {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.about-me-line {
+   color: red;
+}
+
+.project-link {
+    text-decoration:none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+    
+
+@media only screen and (max-width: 1100px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    ul {
+        display:none;
+        margin: 0px;
+    }
+
+    nav {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    ul.show {
+        display: block;
+    }
+}
+
+.contact-form {
+    height: auto;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw 4vw;
+}
+
+form {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    height:80%;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3 {
+    color: #555;
+    font-weight:800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    border:0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background: coral;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+.submitButton:hover {
+    background-color: #ef744b;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .5);
+}
+
+/*.resume-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ef744b;
+  }
+  
+  button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+  }
+
